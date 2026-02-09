@@ -2,14 +2,77 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Anas Alghamdi | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Anas Saeed Alghamdi | Portfolio</title>
+  <style>
+    body{font-family:system-ui,Arial; background:#0b0f1a; color:#e8eaf0; margin:0}
+    .wrap{max-width:980px; margin:0 auto; padding:48px 18px}
+    .card{background:#111827; border:1px solid #1f2937; border-radius:16px; padding:18px; margin:14px 0}
+    h1{margin:0 0 6px 0; font-size:34px}
+    .muted{color:#aab3c5}
+    a{color:#7aa2ff; text-decoration:none}
+    a:hover{text-decoration:underline}
+    .row{display:flex; gap:14px; flex-wrap:wrap; align-items:center; justify-content:space-between}
+    .tags{display:flex; gap:8px; flex-wrap:wrap; margin-top:10px}
+    .tag{border:1px solid #24324a; background:#0b1220; padding:6px 10px; border-radius:999px; font-size:13px}
+    .grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px}
+    .btn{display:inline-block; padding:10px 14px; border-radius:12px; border:1px solid #24324a; background:#0b1220}
+  </style>
 </head>
 <body>
-  <h1>Anas Saeed Alghamdi</h1>
-  <p>CS Senior • Data/BI • IT Support • Open to Co-op</p>
-  <p>
-    GitHub: <a href="https://github.com/Anas-Alghamdi-CS">Anas-Alghamdi-CS</a>
-  </p>
+  <div class="wrap">
+
+    <div class="card">
+      <div class="row">
+        <div>
+          <h1>Anas Saeed Alghamdi</h1>
+          <div class="muted">CS Senior • Data/BI • IT Support • Open to Co-op</div>
+          <div class="tags">
+            <span class="tag">Excel</span>
+            <span class="tag">Power BI</span>
+            <span class="tag">SQL</span>
+            <span class="tag">Python</span>
+          </div>
+        </div>
+        <div class="row">
+          <a class="btn" href="https://github.com/Anas-Alghamdi-CS" target="_blank">GitHub</a>
+          <a class="btn" href="https://www.linkedin.com/in/anas-al-ghamdi-597255368" target="_blank">LinkedIn</a>
+          <a class="btn" href="https://x.com/Anas_Algamdi_CS" target="_blank">X</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>About</h2>
+      <p class="muted">
+        Computer Science student focused on Data/BI and IT Support. Building practical projects and a clean portfolio.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>Projects</h2>
+      <div class="grid">
+
+        <div class="card">
+          <h3>Project 1</h3>
+          <p class="muted">Short description + tech stack.</p>
+          <a href="https://github.com/Anas-Alghamdi-CS/REPO_NAME" target="_blank">Repository →</a>
+        </div>
+
+        <div class="card">
+          <h3>Project 2</h3>
+          <p class="muted">Short description + tech stack.</p>
+          <a href="https://github.com/Anas-Alghamdi-CS/REPO_NAME" target="_blank">Repository →</a>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Contact</h2>
+      <p class="muted">Best way to reach me: LinkedIn.</p>
+    </div>
+
+  </div>
 </body>
 </html>
