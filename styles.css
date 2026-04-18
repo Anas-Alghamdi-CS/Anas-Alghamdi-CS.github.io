@@ -1,0 +1,68 @@
+/* الألوان والمتغيرات */
+:root[data-theme="dark"] {
+  --bg-color: #0b0f1a;
+  --card-bg: #111827;
+  --border-color: #1f2937;
+  --text-main: #f3f4f6;
+  --text-muted: #9ca3af;
+  --primary: #7aa2ff;
+  --btn-bg: #1f2937;
+}
+
+:root[data-theme="light"] {
+  --bg-color: #f9fafb;
+  --card-bg: #ffffff;
+  --border-color: #e5e7eb;
+  --text-main: #111827;
+  --text-muted: #4b5563;
+  --primary: #2563eb;
+  --btn-bg: #f3f4f6;
+}
+
+body { 
+  background: var(--bg-color); 
+  color: var(--text-main); 
+  font-family: system-ui, -apple-system, sans-serif;
+  margin: 0; transition: all 0.3s ease; 
+}
+
+.wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px; }
+
+.card { 
+  background: var(--card-bg); border: 1px solid var(--border-color); 
+  border-radius: 20px; padding: 25px; margin-bottom: 20px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+/* زر التبديل */
+.theme-toggle-container { position: fixed; top: 20px; right: 20px; z-index: 1000; }
+#theme-toggle {
+  background: var(--btn-bg); border: 1px solid var(--border-color);
+  padding: 10px; border-radius: 50%; cursor: pointer; font-size: 20px;
+}
+
+:root[data-theme="dark"] .icon-sun { display: block; }
+:root[data-theme="dark"] .icon-moon { display: none; }
+:root[data-theme="light"] .icon-sun { display: none; }
+:root[data-theme="light"] .icon-moon { display: block; }
+
+/* لمسات جمالية للبطاقات */
+.project-card { transition: transform 0.3s ease, border-color 0.3s ease; }
+.project-card:hover { 
+  transform: translateY(-5px); 
+  border-color: var(--primary);
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.2);
+}
+
+.status-badge {
+  display: inline-block; padding: 4px 12px; border-radius: 20px;
+  background: rgba(122, 162, 255, 0.1); color: var(--primary);
+  font-size: 14px; font-weight: bold; margin-top: 10px;
+}
+
+.tags { display: flex; gap: 8px; margin: 15px 0; }
+.tag { font-size: 12px; padding: 3px 10px; border-radius: 12px; background: var(--btn-bg); color: var(--text-muted); }
+
+.project-link { color: var(--primary); text-decoration: none; font-weight: 600; font-size: 14px; }
+.muted { color: var(--text-muted); }
+.small { font-size: 14px; }
