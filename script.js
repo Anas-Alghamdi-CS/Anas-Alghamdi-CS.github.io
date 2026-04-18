@@ -3,7 +3,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const htmlElement = document.documentElement;
   const copyEmailBtn = document.getElementById('copy-email');
 
-  // 1. منطق تبديل الثيم
   const savedTheme = localStorage.getItem('theme') || 'dark';
   htmlElement.setAttribute('data-theme', savedTheme);
 
@@ -13,13 +12,10 @@ document.addEventListener('DOMContentLoaded', () => {
     
     htmlElement.setAttribute('data-theme', newTheme);
     localStorage.setItem('theme', newTheme);
-    
-    console.log(`Theme switched to: ${newTheme}`);
   });
 
-  // 2. ميزة نسخ الإيميل
   copyEmailBtn.addEventListener('click', () => {
-    const email = "anas.g.algamdi@gmail.com ";
+    const email = "anas.g.algamdi@gmail.com";
     navigator.clipboard.writeText(email);
     
     const originalText = copyEmailBtn.innerText;
@@ -32,7 +28,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 2000);
   });
 
-  // 3. تأثير ظهور العناصر عند التمرير
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
