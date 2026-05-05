@@ -11,10 +11,8 @@
 
   <!-- شريط التنقل العلوي -->
   <nav class="top-nav">
-    <!-- المساحة اليمنى (فارغة لوزن التصميم) -->
     <div class="nav-side"></div>
 
-    <!-- الروابط في المنتصف -->
     <div class="nav-center">
       <button class="nav-tab active" data-target="home-section" data-i18n="nav_about">من أنا</button>
       <button class="nav-tab" data-target="projects-section" data-i18n="nav_projects">مشاريعي</button>
@@ -22,7 +20,6 @@
       <button class="nav-tab" data-target="contact-section" data-i18n="nav_contact">تواصل معي</button>
     </div>
 
-    <!-- أزرار اللغة والوضع في الزاوية -->
     <div class="nav-side nav-controls">
       <button id="theme-toggle" class="icon-btn">
         <span class="icon-sun">☀️</span>
@@ -44,8 +41,8 @@
         <span class="dot"></span> <span data-i18n="status">متاح للتدريب التعاوني</span>
       </div>
       
-      <h1 class="hero-title">
-        <span data-i18n="greeting">أهلين، أنا أنس الغامدي</span> <span class="wave">👋🏻</span>
+      <h1 class="hero-title" data-i18n="greeting">
+        أهلاً، أنا أنس الغامدي
       </h1>
       
       <p class="hero-subtitle" data-i18n="subtitle">
@@ -54,16 +51,11 @@
 
       <div class="hero-actions">
         <a href="#contact-section" class="btn btn-outline nav-tab" data-target="contact-section" data-i18n="contact_me">تواصل معي</a>
-        <a href="#" class="btn btn-gradient" data-i18n="download_cv">تحميل السيرة الذاتية</a>
-      </div>
-
-      <div class="scroll-indicator">
-        <span data-i18n="scroll">مرر للاكتشاف</span>
-        <div class="line"></div>
+        <a href="assets/CV/Anas_Alghamdi_CV.pdf" download class="btn btn-gradient" data-i18n="download_cv">تحميل السيرة الذاتية</a>
       </div>
     </section>
 
-    <!-- قسم "مشاريعي" (مخفي افتراضياً ويظهر عند الضغط) -->
+    <!-- قسم "مشاريعي" -->
     <section id="projects-section" class="view-section">
       <h2 class="section-title" data-i18n="projects_title">أبرز مشاريعي</h2>
       <div class="grid">
@@ -115,7 +107,10 @@
       <h2 class="section-title" data-i18n="nav_contact">تواصل معي</h2>
       <div class="card glass-card text-center">
         <p class="muted" data-i18n="contact_text">نسعد بتواصلك عبر الروابط التالية:</p>
-        <div class="hero-actions" style="justify-content: center; margin-top: 20px;">
+        <div class="contact-actions">
+          <a class="btn btn-outline" href="mailto:anas.g.algamdi@gmail.com">Email</a>
+          <a class="btn btn-outline" href="tel:+966501622242" dir="ltr">Phone</a>
+          <a class="btn btn-outline" href="https://x.com/Anas_Algamdi_CS" target="_blank">X</a>
           <a class="btn btn-outline" href="https://github.com/Anas-Alghamdi-CS" target="_blank">GitHub</a>
           <a class="btn btn-gradient" href="https://www.linkedin.com/in/anas-alghamdi-cs/" target="_blank">LinkedIn</a>
         </div>
