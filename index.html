@@ -1,82 +1,123 @@
 <!doctype html>
-<html lang="en" data-theme="dark">
+<html lang="ar" dir="rtl" data-theme="dark">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Anas Alghamdi | Portfolio</title>
+  <title>أنس الغامدي | معرض الأعمال</title>
+  <!-- استدعاء خطوط جوجل (Cairo) لدعم العربي والانجليزي بشكل أنيق -->
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="theme-toggle-container">
-    <button id="theme-toggle" aria-label="Toggle Theme">
-      <span class="icon-sun">☀️</span>
-      <span class="icon-moon">🌙</span>
-    </button>
-  </div>
+
+  <!-- خلفية تفاعلية (تموجات لونية) -->
+  <div class="bg-gradient-blobs"></div>
+
+  <!-- شريط التنقل العلوي -->
+  <nav class="navbar">
+    <div class="logo">Anas<span>.</span></div>
+    <div class="nav-links">
+      <a href="#about" data-i18n="about_nav">من أنا</a>
+      <a href="#projects" data-i18n="projects_nav">مشاريعي</a>
+      <a href="#contact" data-i18n="contact_nav">تواصل معي</a>
+    </div>
+    <div class="controls">
+      <button id="lang-toggle" class="glass-btn">EN</button>
+      <button id="theme-toggle" class="glass-btn" aria-label="Toggle Theme">
+        <span class="icon-sun">☀️</span>
+        <span class="icon-moon">🌙</span>
+      </button>
+    </div>
+  </nav>
 
   <div class="wrap">
-    <header class="card intro-card">
-      <div class="row">
-        <div>
-          <h1>Anas Saeed Alghamdi</h1>
-          <div class="muted subtitle">Computer Science Senior @ Umm Al-Qura University</div>
-          <div class="status-badge">Available for Co-op Training</div>
-        </div>
-        <div class="row social-links">
-          <a class="btn primary-btn" href="https://github.com/Anas-Alghamdi-CS" target="_blank">GitHub</a>
-          <a class="btn" href="https://www.linkedin.com/in/anas-alghamdi-cs/" target="_blank">LinkedIn</a>
-          <a class="btn" href="https://x.com/Anas_Algamdi_CS" target="_blank">X</a>
-          <button class="btn" id="copy-email">Copy Email</button>
-        </div>
+    <!-- الواجهة الرئيسية (Hero Section) -->
+    <header class="hero">
+      <div class="status-badge" data-i18n="status">🟢 متاح للتدريب التعاوني</div>
+      
+      <h1 class="hero-title">
+        <span data-i18n="greeting">أهلين، أنا أنس الغامدي</span> <span class="wave">👋🏼</span>
+      </h1>
+      
+      <p class="hero-subtitle" data-i18n="subtitle">
+        طالب علوم حاسب، أطمح لتحويل البيانات المعقدة إلى رؤى استراتيجية تدعم اتخاذ القرار.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#" class="btn btn-gradient" data-i18n="download_cv">تحميل السيرة الذاتية</a>
+        <a href="#contact" class="btn btn-outline" data-i18n="contact_me">تواصل معي</a>
+      </div>
+
+      <!-- شريط التقنيات الزجاجي -->
+      <div class="tech-stack glass-panel">
+        <span title="Data Analysis">📊</span>
+        <span title="Python">🐍</span>
+        <span title="Power BI">📈</span>
+        <span title="SQL">🗄️</span>
+        <span title="AI/LLM">🤖</span>
+        <span title="Java">☕</span>
+      </div>
+      
+      <div class="scroll-indicator">
+        <span data-i18n="scroll">مرر للاكتشاف</span>
+        <div class="line"></div>
       </div>
     </header>
 
-    <section class="card">
-      <h2>About Me</h2>
-      <p class="muted">
-        Computer Science senior student at Umm Al-Qura University. Actively seeking a Co-op training opportunity, primarily in Data Analysis & Business Intelligence (BI), and alternatively IT Support. 
-        I am continuously developing my Excel and Power BI skills for practical industry experience. While my portfolio showcases diverse technical projects ranging from web development to AI, my core professional focus is extracting actionable insights from data and delivering effective technical solutions. I am prioritizing opportunities within Makkah, Jeddah, and the surrounding western regions.
-      </p>
+    <!-- قسم النبذة -->
+    <section id="about" class="section fade-in">
+      <h2 class="section-title" data-i18n="about_title">نبذة عني</h2>
+      <div class="card glass-card">
+        <p class="muted" data-i18n="about_text">
+          طالب في السنة الأخيرة بتخصص علوم الحاسب في جامعة أم القرى. أبحث حالياً عن فرصة تدريب تعاوني، وتحديداً في مجالات تحليل البيانات وذكاء الأعمال (BI). أعمل باستمرار على تطوير مهاراتي لتقديم حلول تقنية فعالة واستخراج رؤى قابلة للتنفيذ من البيانات.
+        </p>
+      </div>
     </section>
 
-    <h2 class="section-title">Portfolio Projects</h2>
-    <div class="grid">
-      <div class="card project-card">
-        <div class="project-header">
-          <h3>Smart Arabic OCR</h3>
-          <span class="project-tag">AI/LLM</span>
+    <!-- قسم المشاريع -->
+    <section id="projects" class="section fade-in">
+      <h2 class="section-title" data-i18n="projects_title">أبرز مشاريعي</h2>
+      <div class="grid">
+        <!-- Project 1 -->
+        <div class="card glass-card project-card">
+          <div class="project-header">
+            <h3>Smart Arabic OCR</h3>
+            <span class="project-tag">AI/LLM</span>
+          </div>
+          <p class="muted small" data-i18n="proj1_desc">استخدام نماذج الذكاء الاصطناعي لاستخراج النصوص العربية وتصحيحها قواعدياً.</p>
+          <div class="tags">
+            <span class="tag">Python</span><span class="tag">Flask</span>
+          </div>
+          <a href="https://github.com/Anas-Alghamdi-CS/Smart-Arabic-OCR" class="project-link" target="_blank" data-i18n="explore">استكشف الكود ←</a>
         </div>
-        <p class="muted small">Utilizing Qwen2.5-VL and ALLaM-7B for intelligent Arabic text extraction and grammar correction.</p>
-        <div class="tags">
-          <span class="tag">Python</span><span class="tag">Flask</span>
-        </div>
-        <a href="https://github.com/Anas-Alghamdi-CS/Smart-Arabic-OCR" class="project-link" target="_blank">Explore Code →</a>
-      </div>
 
-      <div class="card project-card">
-        <div class="project-header">
-          <h3>TripMate Platform</h3>
-          <span class="project-tag">Web App</span>
+        <!-- Project 2 -->
+        <div class="card glass-card project-card">
+          <div class="project-header">
+            <h3>TripMate Platform</h3>
+            <span class="project-tag">Web App</span>
+          </div>
+          <p class="muted small" data-i18n="proj2_desc">منصة سياحية لربط السياح بالمرشدين المحليين مع دعم كامل للغة العربية.</p>
+          <div class="tags">
+            <span class="tag">Laravel</span><span class="tag">MySQL</span>
+          </div>
+          <a href="https://github.com/Anas-Alghamdi-CS/TripMate-Web-Platform" class="project-link" target="_blank" data-i18n="explore">استكشف الكود ←</a>
         </div>
-        <p class="muted small">A Laravel 11 tourism platform connecting tourists with local guides, featuring role-based access and RTL support.</p>
-        <div class="tags">
-          <span class="tag">Laravel</span><span class="tag">MySQL</span>
-        </div>
-        <a href="https://github.com/Anas-Alghamdi-CS/TripMate-Web-Platform" class="project-link" target="_blank">Explore Code →</a>
-      </div>
 
-      <div class="card project-card">
-        <div class="project-header">
-          <h3>PointTrack System</h3>
-          <span class="project-tag">Desktop</span>
+        <!-- Project 3 -->
+        <div class="card glass-card project-card">
+          <div class="project-header">
+            <h3>PointTrack System</h3>
+            <span class="project-tag">Desktop</span>
+          </div>
+          <p class="muted small" data-i18n="proj3_desc">نظام لإدارة فعاليات الأندية الطلابية الجامعية.</p>
+          <div class="tags">
+            <span class="tag">Java</span><span class="tag">MySQL</span>
+          </div>
+          <a href="https://github.com/Anas-Alghamdi-CS/PointTrack-JavaFX" class="project-link" target="_blank" data-i18n="explore">استكشف الكود ←</a>
         </div>
-        <p class="muted small">Event management system for university student clubs using JavaFX and JDBC.</p>
-        <div class="tags">
-          <span class="tag">Java</span><span class="tag">MySQL</span>
-        </div>
-        <a href="https://github.com/Anas-Alghamdi-CS/PointTrack-JavaFX" class="project-link" target="_blank">Explore Code →</a>
       </div>
-    </div>
+    </section>
   </div>
 
   <script src="script.js"></script>

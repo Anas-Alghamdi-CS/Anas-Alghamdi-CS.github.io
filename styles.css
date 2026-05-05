@@ -1,142 +1,89 @@
-:root[data-theme="dark"] {
-  --bg-color: #0b0f1a;
-  --card-bg: #111827;
-  --border-color: #1f2937;
-  --text-main: #f3f4f6;
-  --text-muted: #9ca3af;
-  --primary: #7aa2ff;
-  --btn-bg: #1f2937;
-}
+document.addEventListener('DOMContentLoaded', () => {
+  // 1. نظام تغيير المظهر (Dark / Light)
+  const themeToggle = document.getElementById('theme-toggle');
+  const htmlElement = document.documentElement;
+  
+  const savedTheme = localStorage.getItem('theme') || 'dark';
+  htmlElement.setAttribute('data-theme', savedTheme);
 
-:root[data-theme="light"] {
-  --bg-color: #f9fafb;
-  --card-bg: #ffffff;
-  --border-color: #e5e7eb;
-  --text-main: #111827;
-  --text-muted: #4b5563;
-  --primary: #2563eb;
-  --btn-bg: #f3f4f6;
-}
+  themeToggle.addEventListener('click', () => {
+    const currentTheme = htmlElement.getAttribute('data-theme');
+    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+    htmlElement.setAttribute('data-theme', newTheme);
+    localStorage.setItem('theme', newTheme);
+  });
 
-body { 
-  background: var(--bg-color); 
-  color: var(--text-main); 
-  font-family: system-ui, -apple-system, sans-serif;
-  margin: 0; 
-  transition: all 0.3s ease; 
-  line-height: 1.6;
-}
+  // 2. نظام تغيير اللغة (عربي / انجليزي)
+  const langToggle = document.getElementById('lang-toggle');
+  let currentLang = 'ar';
 
-.wrap { 
-  max-width: 900px; 
-  margin: 0 auto; 
-  padding: 40px 20px; 
-}
+  const translations = {
+    ar: {
+      about_nav: "من أنا",
+      projects_nav: "مشاريعي",
+      contact_nav: "تواصل معي",
+      status: "🟢 متاح للتدريب التعاوني",
+      greeting: "أهلين، أنا أنس الغامدي",
+      subtitle: "طالب علوم حاسب، أطمح لتحويل البيانات المعقدة إلى رؤى استراتيجية تدعم اتخاذ القرار.",
+      download_cv: "تحميل السيرة الذاتية",
+      contact_me: "تواصل معي",
+      scroll: "مرر للاكتشاف",
+      about_title: "نبذة عني",
+      about_text: "طالب في السنة الأخيرة بتخصص علوم الحاسب في جامعة أم القرى. أبحث حالياً عن فرصة تدريب تعاوني، وتحديداً في مجالات تحليل البيانات وذكاء الأعمال (BI). أعمل باستمرار على تطوير مهاراتي لتقديم حلول تقنية فعالة واستخراج رؤى قابلة للتنفيذ من البيانات.",
+      projects_title: "أبرز مشاريعي",
+      proj1_desc: "استخدام نماذج الذكاء الاصطناعي لاستخراج النصوص العربية وتصحيحها قواعدياً.",
+      proj2_desc: "منصة سياحية لربط السياح بالمرشدين المحليين مع دعم كامل للغة العربية.",
+      proj3_desc: "نظام لإدارة فعاليات الأندية الطلابية الجامعية.",
+      explore: "استكشف الكود ←"
+    },
+    en: {
+      about_nav: "About Me",
+      projects_nav: "Projects",
+      contact_nav: "Contact",
+      status: "🟢 Available for Co-op Training",
+      greeting: "Hi, I'm Anas Alghamdi",
+      subtitle: "CS Senior Student, aiming to transform complex data into strategic insights.",
+      download_cv: "Download CV",
+      contact_me: "Contact Me",
+      scroll: "Scroll to discover",
+      about_title: "About Me",
+      about_text: "Computer Science senior student at Umm Al-Qura University. Actively seeking a Co-op training opportunity, primarily in Data Analysis & Business Intelligence (BI). I am continuously developing my skills to deliver effective technical solutions and extract actionable insights from data.",
+      projects_title: "Portfolio Projects",
+      proj1_desc: "Utilizing AI models for intelligent Arabic text extraction and grammar correction.",
+      proj2_desc: "Tourism platform connecting tourists with local guides, featuring RTL support.",
+      proj3_desc: "Event management system for university student clubs.",
+      explore: "Explore Code →"
+    }
+  };
 
-.card { 
-  background: var(--card-bg); 
-  border: 1px solid var(--border-color); 
-  border-radius: 20px; 
-  padding: 25px; 
-  margin-bottom: 20px;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-}
+  langToggle.addEventListener('click', () => {
+    currentLang = currentLang === 'ar' ? 'en' : 'ar';
+    htmlElement.setAttribute('lang', currentLang);
+    htmlElement.setAttribute('dir', currentLang === 'ar' ? 'rtl' : 'ltr');
+    langToggle.innerText = currentLang === 'ar' ? 'EN' : 'عربي';
+    
+    // تحديث النصوص
+    document.querySelectorAll('[data-i18n]').forEach(element => {
+      const key = element.getAttribute('data-i18n');
+      element.innerText = translations[currentLang][key];
+    });
 
-.theme-toggle-container { 
-  position: fixed; 
-  top: 20px; 
-  right: 20px; 
-  z-index: 1000; 
-}
+    // تعديل اتجاه الأسهم في الروابط
+    document.querySelectorAll('.project-link').forEach(link => {
+        link.innerText = translations[currentLang].explore;
+    });
+  });
 
-#theme-toggle {
-  background: var(--btn-bg); 
-  border: 1px solid var(--border-color);
-  padding: 10px; 
-  border-radius: 50%; 
-  cursor: pointer; 
-  font-size: 20px;
-}
+  // 3. حركات الظهور (Intersection Observer)
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.1 });
 
-:root[data-theme="dark"] .icon-sun { display: block; }
-:root[data-theme="dark"] .icon-moon { display: none; }
-:root[data-theme="light"] .icon-sun { display: none; }
-:root[data-theme="light"] .icon-moon { display: block; }
-
-h1 { margin: 0 0 8px 0; font-size: 36px; color: var(--text-main); }
-h2 { margin: 0 0 16px 0; font-size: 24px; color: var(--text-main); border-bottom: 1px solid var(--border-color); padding-bottom: 8px; }
-h3 { margin: 0 0 8px 0; font-size: 20px; color: var(--text-main); }
-p { margin: 0 0 16px 0; }
-
-.section-title { margin-left: 8px; margin-top: 32px; border: none; }
-
-.row { display: flex; gap: 16px; flex-wrap: wrap; align-items: center; justify-content: space-between; }
-.social-links { gap: 12px; }
-
-a { text-decoration: none; }
-
-.btn, .btn:link, .btn:visited, .btn:active { 
-  display: inline-block; 
-  padding: 8px 16px; 
-  border-radius: 8px; 
-  border: 1px solid var(--border-color); 
-  background: var(--btn-bg); 
-  color: var(--text-main) !important; 
-  text-decoration: none !important; 
-  font-size: 14px;
-  font-family: inherit;
-  cursor: pointer;
-  transition: background 0.2s, transform 0.1s; 
-}
-
-.btn:hover { 
-  background: var(--border-color); 
-}
-
-.primary-btn, .primary-btn:link, .primary-btn:visited {
-  background: var(--primary);
-  color: #ffffff !important;
-  border-color: var(--primary);
-}
-
-.primary-btn:hover {
-  background: #5b87f5;
-}
-
-.project-card { transition: transform 0.3s ease, border-color 0.3s ease; }
-.project-card:hover { 
-  transform: translateY(-5px); 
-  border-color: var(--primary);
-  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.2);
-}
-
-.project-header { display: flex; justify-content: space-between; align-items: flex-start; }
-
-.status-badge {
-  display: inline-block; 
-  padding: 4px 12px; 
-  border-radius: 20px;
-  background: rgba(122, 162, 255, 0.1); 
-  color: var(--primary);
-  font-size: 14px; 
-  font-weight: bold; 
-  margin-top: 10px;
-}
-
-.project-tag { font-size: 12px; font-weight: bold; color: var(--primary); }
-
-.tags { display: flex; gap: 8px; margin: 15px 0; }
-.tag { font-size: 12px; padding: 3px 10px; border-radius: 12px; background: var(--btn-bg); color: var(--text-muted); }
-
-.project-link, .project-link:link, .project-link:visited { 
-  color: var(--primary); 
-  text-decoration: none; 
-  font-weight: 600; 
-  font-size: 14px; 
-}
-.project-link:hover { text-decoration: underline; }
-
-.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px; }
-
-.muted { color: var(--text-muted); }
-.small { font-size: 14px; }
+  document.querySelectorAll('.fade-in').forEach(element => {
+    observer.observe(element);
+  });
+});
