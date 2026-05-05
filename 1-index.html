@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="ar" dir="rtl" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>أنس الغامدي | معرض الأعمال</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- شريط التنقل العلوي -->
+  <nav class="top-nav">
+    <!-- المساحة اليمنى (فارغة لوزن التصميم) -->
+    <div class="nav-side"></div>
+
+    <!-- الروابط في المنتصف -->
+    <div class="nav-center">
+      <button class="nav-tab active" data-target="home-section" data-i18n="nav_about">من أنا</button>
+      <button class="nav-tab" data-target="projects-section" data-i18n="nav_projects">مشاريعي</button>
+      <button class="nav-tab" data-target="experience-section" data-i18n="nav_experience">الخبرة</button>
+      <button class="nav-tab" data-target="contact-section" data-i18n="nav_contact">تواصل معي</button>
+    </div>
+
+    <!-- أزرار اللغة والوضع في الزاوية -->
+    <div class="nav-side nav-controls">
+      <button id="theme-toggle" class="icon-btn">
+        <span class="icon-sun">☀️</span>
+        <span class="icon-moon">🌙</span>
+      </button>
+      <div class="lang-switcher">
+        <span id="lang-en">EN</span>
+        <span id="lang-ar" class="active">عربي</span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- حاوية المحتوى الرئيسي -->
+  <main class="main-content">
+
+    <!-- قسم "من أنا" (الواجهة الرئيسية) -->
+    <section id="home-section" class="view-section active-section">
+      <div class="status-badge">
+        <span class="dot"></span> <span data-i18n="status">متاح للتدريب التعاوني</span>
+      </div>
+      
+      <h1 class="hero-title">
+        <span data-i18n="greeting">أهلين، أنا أنس الغامدي</span> <span class="wave">👋🏻</span>
+      </h1>
+      
+      <p class="hero-subtitle" data-i18n="subtitle">
+        طالب علوم حاسب، أطمح لتحويل البيانات المعقدة إلى رؤى استراتيجية تدعم اتخاذ القرار.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#contact-section" class="btn btn-outline nav-tab" data-target="contact-section" data-i18n="contact_me">تواصل معي</a>
+        <a href="#" class="btn btn-gradient" data-i18n="download_cv">تحميل السيرة الذاتية</a>
+      </div>
+
+      <div class="scroll-indicator">
+        <span data-i18n="scroll">مرر للاكتشاف</span>
+        <div class="line"></div>
+      </div>
+    </section>
+
+    <!-- قسم "مشاريعي" (مخفي افتراضياً ويظهر عند الضغط) -->
+    <section id="projects-section" class="view-section">
+      <h2 class="section-title" data-i18n="projects_title">أبرز مشاريعي</h2>
+      <div class="grid">
+        <div class="card glass-card">
+          <div class="project-header">
+            <h3>Smart Arabic OCR</h3>
+            <span class="project-tag">AI/LLM</span>
+          </div>
+          <p class="muted small" data-i18n="proj1_desc">استخدام نماذج الذكاء الاصطناعي لاستخراج النصوص العربية وتصحيحها قواعدياً.</p>
+          <div class="tags">
+            <span class="tag">Python</span><span class="tag">Flask</span>
+          </div>
+        </div>
+
+        <div class="card glass-card">
+          <div class="project-header">
+            <h3>TripMate Platform</h3>
+            <span class="project-tag">Web App</span>
+          </div>
+          <p class="muted small" data-i18n="proj2_desc">منصة سياحية لربط السياح بالمرشدين المحليين مع دعم كامل للغة العربية.</p>
+          <div class="tags">
+            <span class="tag">Laravel</span><span class="tag">MySQL</span>
+          </div>
+        </div>
+
+        <div class="card glass-card">
+          <div class="project-header">
+            <h3>PointTrack System</h3>
+            <span class="project-tag">Desktop</span>
+          </div>
+          <p class="muted small" data-i18n="proj3_desc">نظام لإدارة فعاليات الأندية الطلابية الجامعية.</p>
+          <div class="tags">
+            <span class="tag">Java</span><span class="tag">MySQL</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- قسم "الخبرة" -->
+    <section id="experience-section" class="view-section">
+      <h2 class="section-title" data-i18n="nav_experience">الخبرة</h2>
+      <div class="card glass-card">
+        <p class="muted text-center" data-i18n="coming_soon">قريباً...</p>
+      </div>
+    </section>
+
+    <!-- قسم "تواصل معي" -->
+    <section id="contact-section" class="view-section">
+      <h2 class="section-title" data-i18n="nav_contact">تواصل معي</h2>
+      <div class="card glass-card text-center">
+        <p class="muted" data-i18n="contact_text">نسعد بتواصلك عبر الروابط التالية:</p>
+        <div class="hero-actions" style="justify-content: center; margin-top: 20px;">
+          <a class="btn btn-outline" href="https://github.com/Anas-Alghamdi-CS" target="_blank">GitHub</a>
+          <a class="btn btn-gradient" href="https://www.linkedin.com/in/anas-alghamdi-cs/" target="_blank">LinkedIn</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
