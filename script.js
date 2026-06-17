@@ -13,30 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
     localStorage.setItem('theme', newTheme);
   });
 
-  // 2. نظام التنقل بين الأقسام
-  const navTabs = document.querySelectorAll('.nav-tab');
-  const viewSections = document.querySelectorAll('.view-section');
-
-  navTabs.forEach(tab => {
-    tab.addEventListener('click', (e) => {
-      // السماح للروابط العادية (مثل تحميل السيرة) بالعمل طبيعياً
-      if(!tab.hasAttribute('data-target')) return; 
-      
-      e.preventDefault();
-      const targetId = tab.getAttribute('data-target');
-
-      navTabs.forEach(t => t.classList.remove('active'));
-      viewSections.forEach(s => s.classList.remove('active-section'));
-
-      // تفعيل الزر في شريط التنقل العلوي إذا كان موجوداً
-      document.querySelectorAll(`.nav-tab[data-target="${targetId}"]`).forEach(btn => {
-        if(btn.parentElement.classList.contains('nav-center')) {
-          btn.classList.add('active');
-        }
-      });
-      document.getElementById(targetId).classList.add('active-section');
-    });
-  });
+  // 2. نظام التنقل تم تحويله إلى التمرير السلس (Smooth Scroll) عبر HTML
 
   // 3. نظام تغيير اللغة
   const langSwitcher = document.querySelector('.lang-switcher');
