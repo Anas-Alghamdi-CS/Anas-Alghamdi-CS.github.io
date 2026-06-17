@@ -36,6 +36,11 @@ document.addEventListener('DOMContentLoaded', () => {
       proj1_desc: "استخدام نماذج الذكاء الاصطناعي لاستخراج النصوص العربية وتصحيحها قواعدياً.",
       proj2_desc: "منصة سياحية لربط السياح بالمرشدين المحليين مع دعم كامل للغة العربية.",
       proj3_desc: "نظام لإدارة فعاليات الأندية الطلابية الجامعية.",
+      proj4_desc: "تطبيق ويب ذكي يحلل الأصوات باستخدام الذكاء الاصطناعي لتشخيص الحالات القلبية.",
+      proj5_desc: "منصة متكاملة لإنجاز المهام وإدارة الأعمال بفعالية.",
+      proj6_desc: "أداة ذكية لتخطيط المهام الأسبوعية بشكل منظم وسهل.",
+      repo_link: "رابط المستودع 🔗",
+      live_link: "الموقع الحي 🌐",
       coming_soon: "قريباً...",
       contact_text: "نسعد بتواصلك عبر الروابط التالية:"
     },
@@ -53,6 +58,11 @@ document.addEventListener('DOMContentLoaded', () => {
       proj1_desc: "Utilizing AI models for intelligent Arabic text extraction and grammar correction.",
       proj2_desc: "Tourism platform connecting tourists with local guides, featuring RTL support.",
       proj3_desc: "Event management system for university student clubs.",
+      proj4_desc: "Smart web app analyzing audio using AI to diagnose heart conditions.",
+      proj5_desc: "Comprehensive platform for task and business management.",
+      proj6_desc: "Smart tool for organizing and planning weekly tasks easily.",
+      repo_link: "Repository 🔗",
+      live_link: "Live Site 🌐",
       coming_soon: "Coming Soon...",
       contact_text: "Feel free to reach out through:"
     }
