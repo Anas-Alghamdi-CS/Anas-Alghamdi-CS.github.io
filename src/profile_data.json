@@ -90,7 +90,8 @@
         "Prompt Engineering",
         "Data Analysis",
         "GitFlow & Agile",
-        "Problem Solving"
+        "Problem Solving",
+        "Business Intelligence (BI)"
       ],
       "programming": [
         "Python",
@@ -112,7 +113,8 @@
         "PostgreSQL",
         "MySQL",
         "Git & GitHub",
-        "Power BI"
+        "Power BI",
+        "Oracle SQL"
       ],
       "spoken_languages": [
         "Arabic (Native)",
@@ -231,12 +233,14 @@
     "skills": {
       "core": [
         "هندسة البرمجيات",
+        "تحليل البيانات",
         "وكلاء الذكاء الاصطناعي (Multi-Agent)",
         "تطوير الويب الشامل (Full-Stack)",
         "الذكاء الاصطناعي وتعلم الآلة",
         "هندسة الأوامر (Prompt)",
         "إدارة الفروع (GitFlow)",
-        "إدارة الأزمات وحل المشكلات"
+        "إدارة الأزمات وحل المشكلات",
+        "ذكاء الأعمال (BI)"
       ],
       "programming": [
         "Python",
@@ -258,7 +262,8 @@
         "PostgreSQL",
         "MySQL",
         "Git & GitHub",
-        "Power BI"
+        "Power BI",
+        "Oracle SQL"
       ],
       "spoken_languages": [
         "العربية (اللغة الأم)",
