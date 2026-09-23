@@ -68,6 +68,7 @@ export default function App() {
           <button onClick={() => scrollTo('projects')}>  {ui.projects}   </button>
           <button onClick={() => scrollTo('skills')}>    {ui.skills}     </button>
           <button onClick={() => scrollTo('education')}> {ui.education}  </button>
+          <button onClick={() => scrollTo('certifications')}> {ui.certifications} </button>
         </div>
 
         {/* Controls: theme + language */}
@@ -258,17 +259,26 @@ export default function App() {
                 {data.education[0].graduation_date}
               </p>
             </motion.div>
+          </div>
+        </section>
 
-            {/* Certifications card */}
+        {/* ── Certifications ────────────────────────────────────────────── */}
+        <section id="certifications" className="section">
+          <motion.h2
+            className="section-title"
+            initial="hidden" whileInView="visible"
+            viewport={{ once: true }} variants={fadeUp}
+          >
+            {ui.certifications}
+          </motion.h2>
+
+          <div className="education-container">
             {data.certifications && (
               <motion.div
                 className="glass-card"
                 initial="hidden" whileInView="visible"
                 viewport={{ once: true }} variants={fadeUp}
               >
-                <h3 style={{ marginBottom: '1.25rem' }}>
-                  {ui.certifications}
-                </h3>
                 <ul className="certs-list">
                   {data.certifications.map((cert, i) => (
                     <li key={i}>
@@ -279,22 +289,9 @@ export default function App() {
                 </ul>
               </motion.div>
             )}
-
-            {/* Courses card */}
-            <motion.div
-              className="glass-card"
-              initial="hidden" whileInView="visible"
-              viewport={{ once: true }} variants={fadeUp}
-            >
-              <h3 style={{ marginBottom: '1rem' }}>
-                {lang === 'ar' ? 'الدورات والتدريب' : 'Courses & Training'}
-              </h3>
-              <ul className="courses-list">
-                {data.courses.map((c, i) => <li key={i}>{c}</li>)}
-              </ul>
-            </motion.div>
           </div>
         </section>
+
       </main>
     </div>
   );

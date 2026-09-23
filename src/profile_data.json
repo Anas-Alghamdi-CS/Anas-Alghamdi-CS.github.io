@@ -2,7 +2,7 @@
   "en": {
     "personal_info": {
       "name": "Anas Alghamdi",
-      "title": "Software Engineer | AI & Full-Stack Developer",
+      "title": "Software Engineer | AI & Web Developer",
       "about": "Final-year CS student serving as Technical Team Lead at Wadi Makkah Company For Technology, where I architect autonomous multi-agent AI systems, engineer containerized production environments, and lead full-stack platform development with Next.js. I build what I understand -- from LLM orchestration pipelines to normalized relational schemas -- and have led cross-functional teams of up to 9 engineers in a real co-op setting. Seeking a Software Engineering or AI development role where I can ship meaningful work from day one.",
       "email": "anas.g.algamdi@gmail.com",
       "phone": "+966501622242",
@@ -55,17 +55,6 @@
           "Python"
         ],
         "link": "https://github.com/Anas-Alghamdi-CS/AI_CV_Agent"
-      },
-      {
-        "title": "Mawaqit (مواقيت)",
-        "description": "Modern responsive Islamic prayer timings web application built with vanilla JavaScript and Aladhan API, featuring glassmorphism UI, dual themes, countdown timers, and bilingual support.",
-        "technologies": [
-          "JavaScript",
-          "HTML5",
-          "CSS3",
-          "REST API"
-        ],
-        "link": "https://github.com/Anas-Alghamdi-CS"
       }
     ],
     "experience": [
@@ -130,12 +119,6 @@
         "English"
       ]
     },
-    "courses": [
-      "Project Management Professional (PMP) – EMDAD (35 hrs)",
-      "Artificial Intelligence: Fundamentals & Advanced Applications – SDAIA (2025)",
-      "Power BI & Data Analysis – EMDAD (30 hrs)",
-      "Data Analysis using Microsoft Excel – EMDAD (30 hrs)"
-    ],
     "ui": {
       "home": "Home",
       "about": "About",
@@ -166,7 +149,7 @@
   "ar": {
     "personal_info": {
       "name": "أنس الغامدي",
-      "title": "مهندس برمجيات | مطور ذكاء اصطناعي وتطبيقات ويب متكاملة",
+      "title": "مهندس برمجيات | مطور ذكاء اصطناعي وويب",
       "about": "طالب علوم حاسب في السنة الأخيرة وقائد فريق تقني في شركة وادي مكة للتقنية، حيث أصمم أنظمة ذكاء اصطناعي متعددة الوكلاء، وأدير بيئات Docker الإنتاجية، وأقود تطوير منصات بـ Next.js. قدت فرقاً تضم ٩ مهندسين في بيئة تدريب حقيقية. أسعى للانضمام إلى فريق هندسة برمجيات أو ذكاء اصطناعي.",
       "email": "anas.g.algamdi@gmail.com",
       "phone": "+966501622242",
@@ -219,17 +202,6 @@
           "Python"
         ],
         "link": "https://github.com/Anas-Alghamdi-CS/AI_CV_Agent"
-      },
-      {
-        "title": "تطبيق مواقيت (Mawaqit)",
-        "description": "تطبيق ويب عصري تفاعلي لحساب مواقيت الصلاة بدقة عبر Aladhan API مع توفير تفاصيل النوافل والأذكار بتصميم Glassmorphism ودعم اللغتين.",
-        "technologies": [
-          "JavaScript",
-          "HTML5",
-          "CSS3",
-          "REST API"
-        ],
-        "link": "https://github.com/Anas-Alghamdi-CS"
       }
     ],
     "experience": [
@@ -293,12 +265,6 @@
         "الإنجليزية"
       ]
     },
-    "courses": [
-      "إدارة المشاريع الاحترافية (PMP) – إمداد المعرفة (35 ساعة)",
-      "الذكاء الاصطناعي: المبادئ والتطبيقات المتقدمة – سدايا SDAIA (2025)",
-      "Power BI وتحليل البيانات – إمداد المعرفة (30 ساعة)",
-      "تحليل البيانات باستخدام Microsoft Excel – إمداد المعرفة (30 ساعة)"
-    ],
     "ui": {
       "home": "الرئيسية",
       "about": "نبذة",
