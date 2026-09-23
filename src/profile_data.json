@@ -1,0 +1,329 @@
+{
+  "en": {
+    "personal_info": {
+      "name": "Anas Alghamdi",
+      "title": "Software Engineer | AI & Full-Stack Developer",
+      "about": "Final-year CS student serving as Technical Team Lead at Wadi Makkah Company For Technology, where I architect autonomous multi-agent AI systems, engineer containerized production environments, and lead full-stack platform development with Next.js. I build what I understand -- from LLM orchestration pipelines to normalized relational schemas -- and have led cross-functional teams of up to 9 engineers in a real co-op setting. Seeking a Software Engineering or AI development role where I can ship meaningful work from day one.",
+      "email": "anas.g.algamdi@gmail.com",
+      "phone": "+966501622242",
+      "location": "Makkah, Saudi Arabia",
+      "links": {
+        "LinkedIn": "https://www.linkedin.com/in/anas-alghamdi-cs/",
+        "GitHub": "https://github.com/Anas-Alghamdi-CS",
+        "X": "https://x.com/Anas_Algamdi_CS"
+      },
+      "cv_url": "https://raw.githubusercontent.com/Anas-Alghamdi-CS/Anas-Alghamdi-CS/main/Anas%20Alghamdi%20-%20Resume.pdf"
+    },
+    "education": [
+      {
+        "degree": "Bachelor of Science in Computer Science",
+        "university": "Umm Al-Qura University",
+        "gpa": "3.43/4.00",
+        "graduation_date": "Expected January 2027"
+      }
+    ],
+    "projects": [
+      {
+        "title": "TripMate (BSc Capstone)",
+        "description": "A comprehensive bilingual marketplace platform built with Laravel to connect tourists with verified local guides across Saudi Arabia. Features advanced filtering, dedicated guide dashboards, and a normalized MySQL database schema.",
+        "technologies": [
+          "Laravel",
+          "PHP",
+          "MySQL",
+          "Tailwind CSS"
+        ],
+        "link": "https://github.com/Anas-Alghamdi-CS/TripMate-Web-Platform"
+      },
+      {
+        "title": "Coworking Pass Platform",
+        "description": "Saudi unified B2B2C coworking aggregator built with Next.js and PostgreSQL. Headed the project management team, directing sprint roadmaps, GitFlow code reviews, and coordinating 4 sub-teams to launch the MVP on schedule.",
+        "technologies": [
+          "Next.js",
+          "PostgreSQL",
+          "Tailwind CSS",
+          "GitFlow"
+        ],
+        "link": "https://github.com/Coworking-Pass-Team/Coworking_pass"
+      },
+      {
+        "title": "AI-Powered HR Multi-Agent System",
+        "description": "An autonomous recruitment intelligence system powered by CrewAI and Google Gemini. Features hierarchical orchestration across 5 specialized AI agents, multimodal OCR for job ads, and strict anti-hallucination guardrails.",
+        "technologies": [
+          "CrewAI",
+          "Google Gemini API",
+          "Streamlit",
+          "Python"
+        ],
+        "link": "https://github.com/Anas-Alghamdi-CS/AI_CV_Agent"
+      },
+      {
+        "title": "Mawaqit (مواقيت)",
+        "description": "Modern responsive Islamic prayer timings web application built with vanilla JavaScript and Aladhan API, featuring glassmorphism UI, dual themes, countdown timers, and bilingual support.",
+        "technologies": [
+          "JavaScript",
+          "HTML5",
+          "CSS3",
+          "REST API"
+        ],
+        "link": "https://github.com/Anas-Alghamdi-CS"
+      }
+    ],
+    "experience": [
+      {
+        "role": "Software & AI Engineering Co-op Trainee | Team Lead",
+        "company": "Wadi Makkah Company For Technology",
+        "date": "June 2026 - Present",
+        "description": [
+          "Coordinated technical direction across the trainee cohort throughout the co-op program, aligning priorities and supporting peer development.",
+          "Nominated by company leadership as Technical Organizer & Mentor at MiyahThon hackathon, guiding teams on technical feasibility and system architecture.",
+          "Architected an autonomous Multi-Agent HR screening system using CrewAI, Gemini API, and Streamlit with hierarchical orchestration and multimodal OCR.",
+          "Co-engineered the Coworking Pass platform (Next.js, PostgreSQL, Tailwind), heading project management for 9 trainees with formal standups and GitFlow PR reviews.",
+          "Managed Docker containerized environments for local company deployments and hosted Hugging Face NLP sentiment models.",
+          "Evaluated Saudi HUMAIN AI platform APIs (Fuse), benchmarking LLMs, Arabic Speech-to-Text (Cohere Transcribe A), and vision models."
+        ]
+      },
+      {
+        "role": "Hajj Organizer & Crowd Management Lead",
+        "company": "Hajj Season",
+        "date": "Two Seasons Experience",
+        "description": [
+          "Directed high-volume crowd movement and real-time operations under high-pressure conditions across two consecutive Hajj seasons.",
+          "Demonstrated crisis management, rapid decision-making, and clear cross-cultural communication in high-stakes environments."
+        ]
+      }
+    ],
+    "skills": {
+      "core": [
+        "Software Engineering",
+        "Multi-Agent Systems",
+        "Artificial Intelligence & ML",
+        "Full-Stack Development",
+        "Prompt Engineering",
+        "Data Analysis",
+        "GitFlow & Agile",
+        "Problem Solving"
+      ],
+      "programming": [
+        "Python",
+        "JavaScript",
+        "PHP",
+        "Java",
+        "SQL",
+        "HTML5/CSS3"
+      ],
+      "tools_and_frameworks": [
+        "Next.js",
+        "React",
+        "Laravel",
+        "Node.js",
+        "Express.js",
+        "Docker",
+        "CrewAI",
+        "Streamlit",
+        "PostgreSQL",
+        "MySQL",
+        "Git & GitHub",
+        "Power BI"
+      ],
+      "spoken_languages": [
+        "Arabic (Native)",
+        "English"
+      ]
+    },
+    "courses": [
+      "Project Management Professional (PMP) – EMDAD (35 hrs)",
+      "Artificial Intelligence: Fundamentals & Advanced Applications – SDAIA (2025)",
+      "Power BI & Data Analysis – EMDAD (30 hrs)",
+      "Data Analysis using Microsoft Excel – EMDAD (30 hrs)"
+    ],
+    "ui": {
+      "home": "Home",
+      "about": "About",
+      "experience": "Experience",
+      "projects": "Projects",
+      "skills": "Skills",
+      "education": "Education",
+      "theme_dark": "Dark",
+      "theme_light": "Light",
+      "lang": "عربي",
+      "core": "Core Competencies",
+      "programming": "Programming Languages",
+      "tools_and_frameworks": "Frameworks & DevOps Tools",
+      "spoken_languages": "Languages",
+      "download_cv": "Download CV",
+      "certifications": "Certifications & Training",
+      "projects_btn_github": "GitHub",
+      "projects_btn_live": "Live Demo",
+      "contact": "Contact"
+    },
+    "certifications": [
+      "Project Management Professional (PMP) – EMDAD ALMARIFAH FOR TRAINING (35 hrs)",
+      "Artificial Intelligence: Fundamentals & Advanced Applications – SDAIA (2025)",
+      "Power BI for Data Analysis – EMDAD ALMARIFAH FOR TRAINING (30 hrs)",
+      "Data Analysis using Microsoft Excel – EMDAD ALMARIFAH FOR TRAINING (30 hrs)"
+    ]
+  },
+  "ar": {
+    "personal_info": {
+      "name": "أنس الغامدي",
+      "title": "مهندس برمجيات | مطور ذكاء اصطناعي وتطبيقات ويب متكاملة",
+      "about": "طالب علوم حاسب في السنة الأخيرة وقائد فريق تقني في شركة وادي مكة للتقنية، حيث أصمم أنظمة ذكاء اصطناعي متعددة الوكلاء، وأدير بيئات Docker الإنتاجية، وأقود تطوير منصات بـ Next.js. قدت فرقاً تضم ٩ مهندسين في بيئة تدريب حقيقية. أسعى للانضمام إلى فريق هندسة برمجيات أو ذكاء اصطناعي.",
+      "email": "anas.g.algamdi@gmail.com",
+      "phone": "+966501622242",
+      "location": "مكة المكرمة، السعودية",
+      "links": {
+        "LinkedIn": "https://www.linkedin.com/in/anas-alghamdi-cs/",
+        "GitHub": "https://github.com/Anas-Alghamdi-CS",
+        "X": "https://x.com/Anas_Algamdi_CS"
+      },
+      "cv_url": "https://raw.githubusercontent.com/Anas-Alghamdi-CS/Anas-Alghamdi-CS/main/Anas%20Alghamdi%20-%20Resume.pdf"
+    },
+    "education": [
+      {
+        "degree": "بكالوريوس علوم الحاسب الآلي",
+        "university": "جامعة أم القرى",
+        "gpa": "3.43/4.00",
+        "graduation_date": "يناير 2027"
+      }
+    ],
+    "projects": [
+      {
+        "title": "منصة TripMate (مشروع التخرج)",
+        "description": "منصة ويب سياحية ثنائية اللغة متكاملة مبنية بإطار Laravel لربط السياح بالمرشدين المحليين في السعودية، تشمل بحثاً متقدماً، لوحات تحكم، ونظام حجز وتقييم متكامل.",
+        "technologies": [
+          "Laravel",
+          "PHP",
+          "MySQL",
+          "Tailwind CSS"
+        ],
+        "link": "https://github.com/Anas-Alghamdi-CS/TripMate-Web-Platform"
+      },
+      {
+        "title": "منصة مساحات العمل المشتركة Coworking Pass",
+        "description": "الشبكة السعودية الموحدة لمساحات العمل المشتركة (B2B2C) مبنية بـ Next.js و PostgreSQL. قيادة فريق إدارة المشروع والإشراف على 4 فرق برمجية ومراجعة الأكواد بـ GitFlow وإطلاق الـ MVP.",
+        "technologies": [
+          "Next.js",
+          "PostgreSQL",
+          "Tailwind CSS",
+          "GitFlow"
+        ],
+        "link": "https://github.com/Coworking-Pass-Team/Coworking_pass"
+      },
+      {
+        "title": "نظام الموارد البشرية الذكي AI-Powered HR Agent",
+        "description": "نظام توظيف ذكي متعدد الوكلاء مبني باستخدام CrewAI ونماذج Gemini بهيكلية هرمية لأتمتة فحص السير الذاتية وتحليل ملاءمتها الوظيفية وتقنية OCR متعددة الوسائط وحواجز أمان متقدمة.",
+        "technologies": [
+          "CrewAI",
+          "Google Gemini API",
+          "Streamlit",
+          "Python"
+        ],
+        "link": "https://github.com/Anas-Alghamdi-CS/AI_CV_Agent"
+      },
+      {
+        "title": "تطبيق مواقيت (Mawaqit)",
+        "description": "تطبيق ويب عصري تفاعلي لحساب مواقيت الصلاة بدقة عبر Aladhan API مع توفير تفاصيل النوافل والأذكار بتصميم Glassmorphism ودعم اللغتين.",
+        "technologies": [
+          "JavaScript",
+          "HTML5",
+          "CSS3",
+          "REST API"
+        ],
+        "link": "https://github.com/Anas-Alghamdi-CS"
+      }
+    ],
+    "experience": [
+      {
+        "role": "متدرب هندسة برمجيات وذكاء اصطناعي (قائد الفريق التقني)",
+        "company": "شركة وادي مكة للتقنية",
+        "date": "يونيو 2026 - الحاضر",
+        "description": [
+          "التنسيق التقني عبر مجموعة المتدربين طوال فترة التدريب ودعم تطورهم المهني.",
+          "ترشيح رسمي من الشركة لتمثيل وادي مكة كمنظم تقني ومرشد في هاكاثون MiyahThon، وتوجيه الفرق على الجدوى التقنية.",
+          "تصميم نظام ذكاء اصطناعي متعدد الوكلاء لفرز السير الذاتية باستخدام CrewAI و Gemini API مع OCR متعدد الوسائط.",
+          "قيادة فريق إدارة مشروع Coworking Pass لـ ٩ متدربين مع standups يومية ومراجعات GitFlow.",
+          "إدارة بيئات Docker الإنتاجية ونشر نماذج معالجة اللغة الطبيعية.",
+          "تقييم منصة HUMAIN AI السعودية (Fuse) وقياس أداء النماذج اللغوية الكبيرة وتقنية تحويل الكلام للعربية."
+        ]
+      },
+      {
+        "role": "مشرف إدارة حشود وتنظيم",
+        "company": "موسم الحج",
+        "date": "خبرة موسمين متتاليين",
+        "description": [
+          "إدارة تدفق الحشود الكثيفة والعمليات الميدانية اللحظية تحت ضغط تشغيلي عالٍ خلال موسمين متتاليين.",
+          "إثبات كفاءة عالية في إدارة الأزمات، اتخاذ القرارات السريعة، والتواصل متعدد الثقافات في بيئات حساسة."
+        ]
+      }
+    ],
+    "skills": {
+      "core": [
+        "هندسة البرمجيات",
+        "وكلاء الذكاء الاصطناعي (Multi-Agent)",
+        "تطوير الويب الشامل (Full-Stack)",
+        "الذكاء الاصطناعي وتعلم الآلة",
+        "هندسة الأوامر (Prompt)",
+        "إدارة الفروع (GitFlow)",
+        "إدارة الأزمات وحل المشكلات"
+      ],
+      "programming": [
+        "Python",
+        "JavaScript",
+        "PHP",
+        "Java",
+        "SQL",
+        "HTML5/CSS3"
+      ],
+      "tools_and_frameworks": [
+        "Next.js",
+        "React",
+        "Laravel",
+        "Node.js",
+        "Express.js",
+        "Docker",
+        "CrewAI",
+        "Streamlit",
+        "PostgreSQL",
+        "MySQL",
+        "Git & GitHub",
+        "Power BI"
+      ],
+      "spoken_languages": [
+        "العربية (اللغة الأم)",
+        "الإنجليزية"
+      ]
+    },
+    "courses": [
+      "إدارة المشاريع الاحترافية (PMP) – إمداد المعرفة (35 ساعة)",
+      "الذكاء الاصطناعي: المبادئ والتطبيقات المتقدمة – سدايا SDAIA (2025)",
+      "Power BI وتحليل البيانات – إمداد المعرفة (30 ساعة)",
+      "تحليل البيانات باستخدام Microsoft Excel – إمداد المعرفة (30 ساعة)"
+    ],
+    "ui": {
+      "home": "الرئيسية",
+      "about": "نبذة",
+      "experience": "الخبرات",
+      "projects": "المشاريع",
+      "skills": "المهارات",
+      "education": "التعليم",
+      "theme_dark": "ليلي",
+      "theme_light": "نهاري",
+      "lang": "English",
+      "core": "المهارات الهندسية والأساسية",
+      "programming": "لغات البرمجة",
+      "tools_and_frameworks": "أطر العمل وأدوات التطوير",
+      "spoken_languages": "اللغات",
+      "download_cv": "تحميل السيرة الذاتية",
+      "certifications": "الشهادات والتدريب",
+      "projects_btn_github": "GitHub",
+      "projects_btn_live": "معاينة",
+      "contact": "تواصل"
+    },
+    "certifications": [
+      "إدارة المشاريع الاحترافية (PMP) – إمداد المعرفة للتدريب (35 ساعة)",
+      "الذكاء الاصطناعي: المبادئ والتطبيقات المتقدمة – سدايا SDAIA (2025)",
+      "Power BI وتحليل البيانات – إمداد المعرفة للتدريب (30 ساعة)",
+      "تحليل البيانات باستخدام Microsoft Excel – إمداد المعرفة للتدريب (30 ساعة)"
+    ]
+  }
+}
