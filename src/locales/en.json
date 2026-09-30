@@ -1,0 +1,59 @@
+{
+  "nav": { "experience": "Experience", "projects": "Projects", "skills": "Skills", "education": "Education", "switch": "عربي" },
+  "hero": {
+    "badge": "Available for Full-Time Roles | Expected Jan 2027",
+    "name": "Anas Alghamdi",
+    "role": "Software Engineer · AI & Full-Stack Developer",
+    "summary": "Final-year CS student and Technical Team Lead at Wadi Makkah Company For Technology. I architect autonomous multi-agent AI systems, ship Next.js platforms, and lead teams of up to 9 engineers with GitFlow discipline. I build what I understand, from LLM orchestration to normalized relational schemas.",
+    "cv": "Download CV",
+    "location": "Makkah, Saudi Arabia"
+  },
+  "experience": {
+    "title": "Experience & Leadership",
+    "subtitle": "Real co-op delivery and high-stakes field operations.",
+    "wadi": {
+      "role": "Team Lead & Software/AI Trainee",
+      "company": "Wadi Makkah Company For Technology",
+      "date": "Jun 2026 – Present",
+      "points": [
+        "Architected a multi-agent HR screening system with CrewAI and Gemini, featuring hierarchical orchestration and multimodal OCR.",
+        "Co-engineered Coworking Pass (Next.js + PostgreSQL), leading 9 trainees through standups and GitFlow pull-request reviews.",
+        "Nominated as Technical Organizer & Mentor at the MiyahThon Hackathon, advising teams on feasibility and architecture.",
+        "Managed Docker environments and evaluated HUMAIN AI platform APIs across LLM, Arabic speech-to-text, and vision models."
+      ]
+    },
+    "hajj": {
+      "role": "Hajj Crowd Management Lead",
+      "company": "Hajj Season",
+      "date": "Two seasons",
+      "points": [
+        "Directed high-volume crowd movement and real-time operations under intense pressure.",
+        "Crisis management, rapid decisions, and cross-cultural communication in high-stakes settings."
+      ]
+    }
+  },
+  "projects": {
+    "title": "Featured Projects",
+    "subtitle": "Production-minded builds across web and AI.",
+    "code": "Source",
+    "items": {
+      "tripmate": { "title": "TripMate Platform", "desc": "BSc capstone: a bilingual marketplace connecting tourists with verified local guides across Saudi Arabia, with advanced filtering, guide dashboards, and a normalized MySQL schema." },
+      "coworking": { "title": "Coworking Pass Platform", "desc": "A B2B2C coworking aggregator MVP. Led project management across 4 sub-teams with sprint roadmaps and GitFlow reviews, shipped on schedule." },
+      "hr": { "title": "AI-Powered HR Multi-Agent System", "desc": "A 5-agent autonomous recruitment pipeline on CrewAI and Gemini, with multimodal OCR for job ads and strict anti-hallucination guardrails." }
+    }
+  },
+  "skills": {
+    "title": "Skills Matrix",
+    "subtitle": "Select a group to explore.",
+    "groups": { "ai": "AI & Agents", "fullstack": "Full-Stack Development", "tools": "Tools & DevOps" }
+  },
+  "education": {
+    "title": "Education & Certifications",
+    "degree": "BSc in Computer Science",
+    "university": "Umm Al-Qura University",
+    "gpa": "GPA 3.43 / 4.00",
+    "date": "Expected January 2027",
+    "certs": ["PMP, 35 hrs (EMDAD ALMARIFAH)", "AI: Fundamentals & Advanced Applications (SDAIA, 2025)", "Power BI for Data Analysis, 30 hrs", "Data Analysis with Microsoft Excel, 30 hrs"]
+  },
+  "footer": { "rights": "All rights reserved.", "built": "Designed & built with React, Vite and Tailwind CSS." }
+}
