@@ -1,12 +1,20 @@
 {
-  "nav": { "experience": "Experience", "projects": "Projects", "skills": "Skills", "education": "Education", "switch": "عربي" },
+  "nav": {
+    "experience": "Experience",
+    "projects": "Projects",
+    "skills": "Skills",
+    "education": "Education",
+    "switch": "عربي"
+  },
   "hero": {
     "badge": "Available for Full-Time Roles | Expected Jan 2027",
     "name": "Anas Alghamdi",
     "role": "Software Engineer · AI & Full-Stack Developer",
     "summary": "Final-year CS student and Technical Team Lead at Wadi Makkah Company For Technology. I architect autonomous multi-agent AI systems, ship Next.js platforms, and lead teams of up to 9 engineers with GitFlow discipline. I build what I understand, from LLM orchestration to normalized relational schemas.",
     "cv": "Download CV",
-    "location": "Makkah, Saudi Arabia"
+    "location": "Makkah, Saudi Arabia",
+    "cta2": "Try the terminal",
+    "terminalHint": "Interactive demo: type a command or tap a chip"
   },
   "experience": {
     "title": "Experience & Leadership",
@@ -37,15 +45,61 @@
     "subtitle": "Production-minded builds across web and AI.",
     "code": "Source",
     "items": {
-      "tripmate": { "title": "TripMate Platform", "desc": "BSc capstone: a bilingual marketplace connecting tourists with verified local guides across Saudi Arabia, with advanced filtering, guide dashboards, and a normalized MySQL schema." },
-      "coworking": { "title": "Coworking Pass Platform", "desc": "A B2B2C coworking aggregator MVP. Led project management across 4 sub-teams with sprint roadmaps and GitFlow reviews, shipped on schedule." },
-      "hr": { "title": "AI-Powered HR Multi-Agent System", "desc": "A 5-agent autonomous recruitment pipeline on CrewAI and Gemini, with multimodal OCR for job ads and strict anti-hallucination guardrails." }
+      "tripmate": {
+        "title": "TripMate Platform",
+        "desc": "BSc capstone: a bilingual marketplace connecting tourists with verified local guides across Saudi Arabia, with advanced filtering, guide dashboards, and a normalized MySQL schema."
+      },
+      "coworking": {
+        "title": "Coworking Pass Platform",
+        "desc": "A B2B2C coworking aggregator MVP. Led project management across 4 sub-teams with sprint roadmaps and GitFlow reviews, shipped on schedule."
+      },
+      "hr": {
+        "title": "AI-Powered HR Multi-Agent System",
+        "desc": "A 5-agent autonomous recruitment pipeline on CrewAI and Gemini, with multimodal OCR for job ads and strict anti-hallucination guardrails."
+      }
+    },
+    "tabs": {
+      "overview": "Overview",
+      "architecture": "Architecture",
+      "stack": "Tech Stack"
+    },
+    "github": "GitHub",
+    "arch": {
+      "tripmate": [
+        "Laravel MVC application with a bilingual (AR/EN) interface",
+        "Normalized MySQL schema for guides, tourists and listings",
+        "Dedicated dashboards for guides to manage their offerings",
+        "Advanced filtering to match tourists with verified guides"
+      ],
+      "coworking": [
+        "Next.js application backed by PostgreSQL",
+        "B2B2C model aggregating coworking spaces behind one pass",
+        "4 sub-teams coordinated through sprint roadmaps",
+        "GitFlow branching with mandatory pull-request reviews"
+      ],
+      "hr": [
+        "Streamlit interface as the entry point",
+        "Hierarchical orchestration across 5 specialized agents",
+        "Multimodal OCR ingests job ads",
+        "Anti-hallucination guardrails constrain agent output"
+      ]
     }
   },
   "skills": {
     "title": "Skills Matrix",
-    "subtitle": "Select a group to explore.",
-    "groups": { "ai": "AI & Agents", "fullstack": "Full-Stack Development", "tools": "Tools & DevOps" }
+    "subtitle": "Filter by category, hover for proficiency.",
+    "groups": {
+      "ai": "AI & Agents",
+      "fullstack": "Full-Stack Development",
+      "tools": "Tools & DevOps"
+    },
+    "filters": {
+      "all": "All",
+      "ai": "AI & Agents",
+      "fullstack": "Full-Stack",
+      "tools": "DevOps & Tools"
+    },
+    "level": "Proficiency"
   },
   "education": {
     "title": "Education & Certifications",
@@ -53,7 +107,57 @@
     "university": "Umm Al-Qura University",
     "gpa": "GPA 3.43 / 4.00",
     "date": "Expected January 2027",
-    "certs": ["PMP, 35 hrs (EMDAD ALMARIFAH)", "AI: Fundamentals & Advanced Applications (SDAIA, 2025)", "Power BI for Data Analysis, 30 hrs", "Data Analysis with Microsoft Excel, 30 hrs"]
+    "certs": [
+      "PMP, 35 hrs (EMDAD ALMARIFAH)",
+      "AI: Fundamentals & Advanced Applications (SDAIA, 2025)",
+      "Power BI for Data Analysis, 30 hrs",
+      "Data Analysis with Microsoft Excel, 30 hrs"
+    ]
   },
-  "footer": { "rights": "All rights reserved.", "built": "Designed & built with React, Vite and Tailwind CSS." }
+  "footer": {
+    "rights": "All rights reserved.",
+    "built": "Designed & built with React, Vite and Tailwind CSS."
+  },
+  "metrics": {
+    "engineers": "Engineers led",
+    "agents": "Autonomous AI agents architected",
+    "hajj": "High-stakes Hajj seasons managed",
+    "gpa": "CS cumulative GPA"
+  },
+  "terminal": {
+    "welcome": "Welcome. Type 'help' to list commands.",
+    "placeholder": "type a command…",
+    "help": [
+      [
+        "help",
+        "list available commands"
+      ],
+      [
+        "cat about.txt",
+        "who I am and what I do"
+      ],
+      [
+        "run agent.py",
+        "simulate the multi-agent HR pipeline"
+      ],
+      [
+        "skills --json",
+        "print my stack as JSON"
+      ],
+      [
+        "clear",
+        "clear the terminal"
+      ]
+    ],
+    "about": [
+      "Anas Alghamdi",
+      "Software Engineer · AI & Full-Stack Developer",
+      "Team Lead @ Wadi Makkah Company For Technology",
+      "B.Sc. Computer Science, Umm Al-Qura University (Exp. Jan 2027)",
+      "Makkah, Saudi Arabia"
+    ],
+    "unknown": "command not found: {{cmd}} (try 'help')",
+    "agentStart": "$ python agent.py  # CrewAI + Gemini · simulated run",
+    "agentDone": "✔ pipeline complete · shortlist ready (simulation)"
+  }
 }
