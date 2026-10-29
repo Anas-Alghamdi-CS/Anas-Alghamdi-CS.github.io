@@ -14,7 +14,7 @@ export const projects = [
 ]
 
 export const metrics = [
-  { id: 'engineers', value: 9, suffix: '+', decimals: 0 },
+  { id: 'projects', value: projects.length, suffix: '', decimals: 0 },
   { id: 'agents', value: 5, suffix: '', decimals: 0 },
   { id: 'hajj', value: 2, suffix: '', decimals: 0 },
   { id: 'gpa', value: 3.43, suffix: '', decimals: 2 },

@@ -9,8 +9,8 @@
   "hero": {
     "badge": "Available for Full-Time Roles | Expected Jan 2027",
     "name": "Anas Alghamdi",
-    "role": "Software Engineer | Technical Project Manager | Full-Stack & AI",
-    "summary": "Final-year CS student and Technical Team Lead at Wadi Makkah Company For Technology. I architect autonomous multi-agent AI systems, ship Next.js platforms, and lead teams of up to 9 engineers with GitFlow discipline. I build what I understand, from LLM orchestration to normalized relational schemas.",
+    "role": "Computer Science | Software Engineer | Technical Project Manager | Full-Stack & AI",
+    "summary": "Final-year CS student and AI Trainee at Wadi Makkah Company For Technology. I architect autonomous multi-agent AI systems, ship Next.js platforms, and head project management for cross-functional technical teams with GitFlow discipline. I build what I understand, from LLM orchestration to normalized relational schemas.",
     "cv": "Download CV",
     "location": "Makkah, Saudi Arabia",
     "cta2": "Try the terminal",
@@ -18,24 +18,25 @@
   },
   "experience": {
     "title": "Experience & Leadership",
-    "subtitle": "Real co-op delivery and high-stakes field operations.",
+    "subtitle": "Applied AI delivery and high-stakes field operations.",
     "wadi": {
-      "role": "Team Lead & Software/AI Trainee",
+      "role": "AI Trainee",
       "company": "Wadi Makkah Company For Technology",
       "date": "Jun 2026 – Present",
       "points": [
         "Architected a multi-agent HR screening system with CrewAI and Gemini, featuring hierarchical orchestration and multimodal OCR.",
-        "Co-engineered Coworking Pass (Next.js + PostgreSQL), leading 9 trainees through standups and GitFlow pull-request reviews.",
+        "Co-engineered Coworking Pass (Next.js + PostgreSQL) and headed project management for a cross-functional technical team, directing sprint milestones and GitFlow PR reviews to launch the MVP.",
         "Nominated as Technical Organizer & Mentor at the MiyahThon Hackathon, advising teams on feasibility and architecture.",
-        "Managed Docker environments and evaluated HUMAIN AI platform APIs across LLM, Arabic speech-to-text, and vision models."
+        "Managed Docker environments, built OpenCV ML prototypes, and benchmarked Saudi HUMAIN AI (Fuse) APIs across LLM, Arabic speech-to-text, and vision models."
       ]
     },
     "hajj": {
-      "role": "Hajj Crowd Management Lead",
-      "company": "Hajj Season",
-      "date": "Two seasons",
+      "role": "Platform Agent",
+      "company": "AL-YAMAMA Company",
+      "date": "May 2026 (Two Hajj seasons)",
       "points": [
-        "Directed high-volume crowd movement and real-time operations under intense pressure.",
+        "Managed high-density pilgrim movement on train platforms across two consecutive Hajj seasons, ensuring passenger safety.",
+        "Coordinated train dispatch signaling (platform clearance) during peak days.",
         "Crisis management, rapid decisions, and cross-cultural communication in high-stakes settings."
       ]
     }
@@ -119,7 +120,7 @@
     "built": "Designed & built with React, Vite and Tailwind CSS."
   },
   "metrics": {
-    "engineers": "Engineers led",
+    "projects": "Featured projects delivered",
     "agents": "Autonomous AI agents architected",
     "hajj": "High-stakes Hajj seasons managed",
     "gpa": "CS cumulative GPA"
@@ -151,8 +152,8 @@
     ],
     "about": [
       "Anas Alghamdi",
-      "Software Engineer | Technical Project Manager | Full-Stack & AI",
-      "Team Lead @ Wadi Makkah Company For Technology",
+      "Computer Science | Software Engineer | Technical Project Manager | Full-Stack & AI",
+      "AI Trainee @ Wadi Makkah Company For Technology",
       "B.Sc. Computer Science, Umm Al-Qura University (Exp. Jan 2027)",
       "Makkah, Saudi Arabia"
     ],
